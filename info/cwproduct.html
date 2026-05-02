@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+﻿<!DOCTYPE html>
+<html lang="en">
 <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="shortcut icon" href="/favicon.ico" />
@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Character Switcher | 抢先体验</title>
+    <title>Company Workshop | LlamaMagic</title>
     <style>
         :root {
             --brand-purple: #665280;
@@ -21,7 +21,7 @@
         }
 
         body {
-            font-family: 'Segoe UI', 'Microsoft YaHei', Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-main);
             margin: 0;
@@ -98,7 +98,7 @@
             background-color: var(--card-bg);
             padding: 40px;
             border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
             min-height: 440px;
             width: 550px;
         }
@@ -109,12 +109,12 @@
             padding: 20px;
             border-radius: 12px;
             background-color: var(--card-bg);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
             padding-top: 25px;
-            /* Add these to match the right side */
             display: flex;
             flex-direction: column;
-
+            justify-content: flex-start;
+            flex: 1;
         }
 
         .tasks-card {
@@ -123,10 +123,10 @@
             display: flex;
             border-radius: 12px;
             border-top: 5px solid var(--brand-orange);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
             flex-direction: column;
-
-            /* Change this from 'center' to 'flex-start' */
+            justify-content: flex-start;
+            flex: 1;
         }
 
         .card h2 {
@@ -134,8 +134,7 @@
             color: white;
             font-size: 1.5rem;
             margin-bottom: 10px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-
+            border-bottom: 1px solid rgba(255,255,255,0.1);
         }
 
         /* Feature Items */
@@ -170,7 +169,7 @@
         .tasks-table th, .tasks-table td {
             padding: 5px 6px;
             text-align: left;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
         }
 
         .tasks-table th {
@@ -201,16 +200,7 @@
         }
 
         .tasks-table tr:hover:not(.group-header) td {
-            background-color: rgba(255, 255, 255, 0.02);
-        }
-
-        /* Stripe Placeholder Area */
-        .stripe-container {
-            width: 100%;
-            min-height: 400px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background-color: rgba(255,255,255,0.02);
         }
 
         /* Mobile Responsiveness */
@@ -218,12 +208,6 @@
             .content-grid {
                 grid-template-columns: 1fr;
             }
-
-            .pricing-card {
-                position: relative;
-                top: 0;
-            }
-
             .header h1 {
                 font-size: 2rem;
             }
@@ -232,96 +216,89 @@
 </head>
 <body>
 
+    <div class="container">
+        <header class="header">
+            <img src="https://nt153133.github.io/images/CompanyWorkshop.png" alt="Company Workshop Icon">
+            <h1>Company <span>Workshop</span></h1>
+            <div class="badge">The Ultimate FC Submersible & Airship Manager</div>
+        </header>
 
-<div class="container">
-    <header class="header">
-        <img src="https://nt153133.github.io/images/WitchHat.png" alt="Character Switcher Icon">
-        <h1>Character <span>Switcher</span></h1>
-        <div class="badge">30-Day Early Access Sneak Peek</div>
-    </header>
+        <main class="content-grid">
 
-    <main class="content-grid">
+            <div class="left-column">
 
-        <div class="left-column">
+                <section class="card features-card">
+                    <h2>Submersible & Airship Expeditions</h2>
 
-            <section class="card features-card">
-                <h2>The Ultimate Character Task Manager</h2>
+                    <div class="feature-item">
+                        <strong>🚀 Automated Redeployment</strong>
+                        <p>Effortlessly resend active vessels on the same expedition. The botbase handles repairs to ensure no downtime.</p>
+                    </div>
 
-                <div class="feature-item">
-                    <strong>🔄 True Hands-Off Automation</strong>
-                    <p>Seamlessly hops between characters, servers, and Data Centers.</p>
-                </div>
+                    <div class="feature-item">
+                        <strong>📦 Smart Loot Storage</strong>
+                        <p>Automatically offload and store expedition rewards into retainers or the Company Chest.</p>
+                    </div>
 
-                <div class="feature-item">
-                    <strong>📋 Visual Task Planner</strong>
-                    <p>Build and save custom sequences (e.g., "Daily Routine" or "Crafting Rotation"). Assign specific tasks from your favorite installed botbases to individual characters.</p>
-                </div>
+                    <div class="feature-item">
+                        <strong>⚙️ Multi-Character Scaling</strong>
+                        <p>Settings are saved per-FC, so the same storage and routing settings work seamlessly across multiple characters.</p>
+                    </div>
 
-                <div class="feature-item">
-                    <strong>🛡️ Bulletproof Execution</strong>
-                    <p>Automatically skips failed tasks so your overnight queue never gets stuck.</p>
-                </div>
+                    <div class="feature-item">
+                        <strong>🔗 Automation Hooks</strong>
+                        <p>Built-in Lisbeth and Orderbot hooks for advanced users integrating workflows.</p>
+                    </div>
+                </section>
 
-                <div class="feature-item">
-                    <strong>📊 Live Dashboard & Discovery</strong>
-                    <p>One-click account scanning instantly finds all your characters across every DC. Track progress, errors, and upcoming tasks in real-time on the overlay.</p>
-                </div>
-            </section>
-        </div>
-        <section class="card tasks-card">
-            <h2>Included Tasks</h2>
-            <table class="tasks-table">
-                <tbody>
-                <tr class="group-header">
-                    <td colspan="2">Botbase Integrations</td>
-                </tr>
-                <tr>
-                    <td>MB Buy</td>
-                    <td>Runs the LlamaMarket market board buying flow.</td>
-                </tr>
-                <tr>
-                    <td>MB Sell</td>
-                    <td>Runs the LlamaMarket retainer selling flow.</td>
-                </tr>
-                <tr>
-                    <td>MB Buy/Sell</td>
-                    <td>Runs market board buying then retainer selling for LlamaMarket.</td>
-                </tr>
-                <tr>
-                    <td>FC Vessel Task</td>
-                    <td>Runs the Company Workshop redeploy task.</td>
-                </tr>
-                <tr>
-                    <td>Lisbeth Order</td>
-                    <td>Call Lisbeth with an order file.</td>
-                </tr>
+            </div>
 
-                <tr class="group-header">
-                    <td colspan="2">General Utilities</td>
-                </tr>
-                <tr>
-                    <td>Delay</td>
-                    <td>Wait for a specified number of seconds before continuing.</td>
-                </tr>
-                <tr>
-                    <td>GC Deliveries</td>
-                    <td>Completes the crafting/gathering GC daily turn-ins.</td>
-                </tr>
-                <tr>
-                    <td>Retainer Ventures</td>
-                    <td>Refreshes retainer ventures.</td>
-                </tr>
-                <tr>
-                    <td>Character Info</td>
-                    <td>Dump information about character into a markdown file.</td>
-                </tr>
-                </tbody>
-            </table>
-        </section>
+            <div class="right-column">
 
+                <section class="card tasks-card">
+                    <h2>Workshop Crafting & Compatibility</h2>
 
-    </main>
-</div>
+                    <div class="feature-item">
+                        <strong>🛠️ Start-to-Finish Crafting</strong>
+                        <p>Fully automates crafting of airship and submersible parts. Start new projects or queue multiple items.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <strong>⚔️ Autonomous Seal Grinding</strong>
+                        <p>Missing materials? The botbase automatically grinds Siren Song Sea for Grand Company seals and purchases items.</p>
+                    </div>
+
+                    <h2 style="margin-top: 20px;">Important Information</h2>
+                    <table class="tasks-table">
+                        <tbody>
+                            <tr class="group-header">
+                                <td colspan="2">Compatibility & Limitations</td>
+                            </tr>
+                            <tr>
+                                <td>Client Support</td>
+                                <td>Supports Global (NA/EU/JP/SA) and Chinese clients only.</td>
+                            </tr>
+                            <tr>
+                                <td>Route Limitations</td>
+                                <td>Only resends ships on the same expedition they just finished.</td>
+                            </tr>
+                            <tr>
+                                <td>Housing Projects</td>
+                                <td>Multi-stage items not fully supported. Finishes current stage only.</td>
+                            </tr>
+                            <tr>
+                                <td>Lisbeth Required</td>
+                                <td>Requires active <a href="https://www.siune.io/products/lisbeth" target="_blank">Lisbeth</a> license.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+            </div>
+
+        </main>
+    </div>
 
 </body>
 </html>
+

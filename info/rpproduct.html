@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+﻿<!DOCTYPE html>
+<html lang="en">
 <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="shortcut icon" href="/favicon.ico" />
@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Character Switcher | 抢先体验</title>
+    <title>LlamaRP Advertise | LlamaMagic</title>
     <style>
         :root {
             --brand-purple: #665280;
@@ -21,7 +21,7 @@
         }
 
         body {
-            font-family: 'Segoe UI', 'Microsoft YaHei', Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-main);
             margin: 0;
@@ -98,7 +98,7 @@
             background-color: var(--card-bg);
             padding: 40px;
             border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
             min-height: 440px;
             width: 550px;
         }
@@ -109,12 +109,12 @@
             padding: 20px;
             border-radius: 12px;
             background-color: var(--card-bg);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
             padding-top: 25px;
-            /* Add these to match the right side */
             display: flex;
             flex-direction: column;
-
+            justify-content: flex-start;
+            flex: 1;
         }
 
         .tasks-card {
@@ -123,10 +123,10 @@
             display: flex;
             border-radius: 12px;
             border-top: 5px solid var(--brand-orange);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
             flex-direction: column;
-
-            /* Change this from 'center' to 'flex-start' */
+            justify-content: flex-start;
+            flex: 1;
         }
 
         .card h2 {
@@ -134,8 +134,7 @@
             color: white;
             font-size: 1.5rem;
             margin-bottom: 10px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-
+            border-bottom: 1px solid rgba(255,255,255,0.1);
         }
 
         /* Feature Items */
@@ -170,7 +169,7 @@
         .tasks-table th, .tasks-table td {
             padding: 5px 6px;
             text-align: left;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
         }
 
         .tasks-table th {
@@ -201,16 +200,7 @@
         }
 
         .tasks-table tr:hover:not(.group-header) td {
-            background-color: rgba(255, 255, 255, 0.02);
-        }
-
-        /* Stripe Placeholder Area */
-        .stripe-container {
-            width: 100%;
-            min-height: 400px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background-color: rgba(255,255,255,0.02);
         }
 
         /* Mobile Responsiveness */
@@ -218,12 +208,6 @@
             .content-grid {
                 grid-template-columns: 1fr;
             }
-
-            .pricing-card {
-                position: relative;
-                top: 0;
-            }
-
             .header h1 {
                 font-size: 2rem;
             }
@@ -232,96 +216,76 @@
 </head>
 <body>
 
+    <div class="container">
+        <header class="header">
+            <img src="https://nt153133.github.io/images/Census.png" alt="LlamaRP Icon">
+            <h1>LlamaRP <span>Advertise</span></h1>
+            <div class="badge">The Ultimate Venue Advertiser</div>
+        </header>
 
-<div class="container">
-    <header class="header">
-        <img src="https://nt153133.github.io/images/WitchHat.png" alt="Character Switcher Icon">
-        <h1>Character <span>Switcher</span></h1>
-        <div class="badge">30-Day Early Access Sneak Peek</div>
-    </header>
+        <main class="content-grid">
 
-    <main class="content-grid">
+            <div class="left-column">
 
-        <div class="left-column">
+                <section class="card features-card">
+                    <h2>Automated Promotions</h2>
 
-            <section class="card features-card">
-                <h2>The Ultimate Character Task Manager</h2>
+                    <div class="feature-item">
+                        <strong>📢 Town Shouts & World Hopping</strong>
+                        <p>Teleport to the 3 major cities to broadcast shout ads. Enable world hopping to travel across your Data Center for maximum reach.</p>
+                    </div>
 
-                <div class="feature-item">
-                    <strong>🔄 True Hands-Off Automation</strong>
-                    <p>Seamlessly hops between characters, servers, and Data Centers.</p>
-                </div>
+                    <div class="feature-item">
+                        <strong>📋 Persistent Party Finder</strong>
+                        <p>Keep a Party Finder listing consistently active during your venue's open hours and pre-opening lead time.</p>
+                    </div>
 
-                <div class="feature-item">
-                    <strong>📋 Visual Task Planner</strong>
-                    <p>Build and save custom sequences (e.g., "Daily Routine" or "Crafting Rotation"). Assign specific tasks from your favorite installed botbases to individual characters.</p>
-                </div>
+                    <div class="feature-item">
+                        <strong>🗣️ In-Venue Barker Announcements</strong>
+                        <p>Set up barker-style announcements to run automatically inside your venue. Broadcast in say, yell, or shout on customized intervals.</p>
+                    </div>
+                </section>
 
-                <div class="feature-item">
-                    <strong>🛡️ Bulletproof Execution</strong>
-                    <p>Automatically skips failed tasks so your overnight queue never gets stuck.</p>
-                </div>
+            </div>
 
-                <div class="feature-item">
-                    <strong>📊 Live Dashboard & Discovery</strong>
-                    <p>One-click account scanning instantly finds all your characters across every DC. Track progress, errors, and upcoming tasks in real-time on the overlay.</p>
-                </div>
-            </section>
-        </div>
-        <section class="card tasks-card">
-            <h2>Included Tasks</h2>
-            <table class="tasks-table">
-                <tbody>
-                <tr class="group-header">
-                    <td colspan="2">Botbase Integrations</td>
-                </tr>
-                <tr>
-                    <td>MB Buy</td>
-                    <td>Runs the LlamaMarket market board buying flow.</td>
-                </tr>
-                <tr>
-                    <td>MB Sell</td>
-                    <td>Runs the LlamaMarket retainer selling flow.</td>
-                </tr>
-                <tr>
-                    <td>MB Buy/Sell</td>
-                    <td>Runs market board buying then retainer selling for LlamaMarket.</td>
-                </tr>
-                <tr>
-                    <td>FC Vessel Task</td>
-                    <td>Runs the Company Workshop redeploy task.</td>
-                </tr>
-                <tr>
-                    <td>Lisbeth Order</td>
-                    <td>Call Lisbeth with an order file.</td>
-                </tr>
+            <div class="right-column">
 
-                <tr class="group-header">
-                    <td colspan="2">General Utilities</td>
-                </tr>
-                <tr>
-                    <td>Delay</td>
-                    <td>Wait for a specified number of seconds before continuing.</td>
-                </tr>
-                <tr>
-                    <td>GC Deliveries</td>
-                    <td>Completes the crafting/gathering GC daily turn-ins.</td>
-                </tr>
-                <tr>
-                    <td>Retainer Ventures</td>
-                    <td>Refreshes retainer ventures.</td>
-                </tr>
-                <tr>
-                    <td>Character Info</td>
-                    <td>Dump information about character into a markdown file.</td>
-                </tr>
-                </tbody>
-            </table>
-        </section>
+                <section class="card tasks-card">
+                    <h2>Scheduling & Testing</h2>
 
+                    <div class="feature-item">
+                        <strong>⏱️ Phase Scheduling & Profiles</strong>
+                        <p>Customize ad copy for "Before Open" and "During" phases. Save, import, and export multiple profiles for different venue nights.</p>
+                    </div>
 
-    </main>
-</div>
+                    <div class="feature-item">
+                        <strong>🧪 Safe Test Mode</strong>
+                        <p>Verify timing and routing without spamming. Test Mode moves your character normally but prints shout messages to /echo instead of public chat.</p>
+                    </div>
+
+                    <h2 style="margin-top: 20px;">Important Limitations</h2>
+                    <table class="tasks-table">
+                        <tbody>
+                            <tr class="group-header">
+                                <td colspan="2">Compatibility Notes</td>
+                            </tr>
+                            <tr>
+                                <td>Supported Regions</td>
+                                <td>NA, EU, JP, and SA regions only. Not compatible with China or Korea.</td>
+                            </tr>
+                            <tr>
+                                <td>Housing Navigation</td>
+                                <td>Requires clear paths. Bot cannot see player-placed furniture and may get stuck.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+            </div>
+
+        </main>
+    </div>
 
 </body>
 </html>
+
