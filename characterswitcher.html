@@ -92,13 +92,13 @@
             background-color: var(--card-bg);
             padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
 
         .features-card {
             border-left: 5px solid var(--brand-purple);
-			padding: 30px 40px;
-			border-radius: 12px;
+            padding: 30px 40px;
+            border-radius: 12px;
         }
 
         .tasks-card {
@@ -106,13 +106,13 @@
             padding: 30px 40px;
         }
 
-/* Pricing Column (Right) */
+        /* Pricing Column (Right) */
         .pricing-card {
             background-color: var(--card-bg);
             padding: 40px;
             border-radius: 12px;
             border-top: 5px solid var(--brand-orange);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -123,7 +123,7 @@
             color: white;
             font-size: 1.5rem;
             margin-bottom: 10px;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             padding-bottom: 10px;
         }
 
@@ -159,7 +159,7 @@
         .tasks-table th, .tasks-table td {
             padding: 5px 6px;
             text-align: left;
-            border-bottom: 1px solid rgba(255,255,255,0.05);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         .tasks-table th {
@@ -190,17 +190,17 @@
         }
 
         .tasks-table tr:hover:not(.group-header) td {
-            background-color: rgba(255,255,255,0.02);
+            background-color: rgba(255, 255, 255, 0.02);
         }
-		
+
         /* Stripe Placeholder Area */
         .stripe-container {
             width: 100%;
-            min-height: 400px; 
+            min-height: 400px;
             display: flex;
             justify-content: center;
             align-items: center;
-			min-width: 350px;
+            min-width: 350px;
         }
 
         /* Mobile Responsiveness */
@@ -208,10 +208,12 @@
             .content-grid {
                 grid-template-columns: 1fr;
             }
+
             .pricing-card {
                 position: relative;
                 top: 0;
             }
+
             .header h1 {
                 font-size: 2rem;
             }
@@ -220,107 +222,107 @@
 </head>
 <body>
 
-    <div class="container">
-        <header class="header">
-            <img src="https://nt153133.github.io/images/WitchHat.png" alt="Character Switcher Icon">
-            <h1>Character <span>Switcher</span></h1>
-            <div class="badge">30-Day Early Access Sneak Peek</div>
-        </header>
+<div class="container">
+    <header class="header">
+        <img src="https://nt153133.github.io/images/WitchHat.png" alt="Character Switcher Icon">
+        <h1>Character <span>Switcher</span></h1>
+        <div class="badge">30-Day Early Access Sneak Peek</div>
+    </header>
 
-        <main class="content-grid">
-            
-            <div class="left-column">
-                
-				<section class="card features-card">
-					<h2>The Ultimate "Set-It-And-Forget-It" Character Task Manager</h2>
-					
-					<div class="feature-item">
-						<strong>🔄 True Hands-Off Automation</strong>
-						<p>Seamlessly hops between characters, servers, and Data Centers.</p>
-					</div>
+    <main class="content-grid">
 
-					<div class="feature-item">
-						<strong>📋 Visual Task Planner</strong>
-						<p>Build and save custom sequences (e.g., "Daily Routine" or "Crafting Rotation"). Assign specific profiles and tasks from your favorite installed botbases to individual characters.</p>
-					</div>
+        <div class="left-column">
 
-					<div class="feature-item">
-						<strong>🛡️ Bulletproof Execution</strong>
-						<p>Automatically skips failed tasks so your overnight queue never gets stuck.</p>
-					</div>
+            <section class="card features-card">
+                <h2>The Ultimate "Set-It-And-Forget-It" Character Task Manager</h2>
 
-					<div class="feature-item">
-						<strong>📊 Live Dashboard & Discovery</strong>
-						<p>One-click account scanning instantly finds all your characters across every DC. Track current progress, errors, and upcoming tasks in real-time on the monitoring overlay.</p>
-					</div>
-				</section>
+                <div class="feature-item">
+                    <strong>🔄 True Hands-Off Automation</strong>
+                    <p>Seamlessly hops between characters, servers, and Data Centers.</p>
+                </div>
 
-                <section class="card tasks-card">
-                    <h2>Included Tasks</h2>
-                    <table class="tasks-table">
-                        <tbody>
-                            <tr class="group-header">
-                                <td colspan="2">Botbase Integrations</td>
-                            </tr>
-                            <tr>
-                                <td>MB Buy</td>
-                                <td>Runs the LlamaMarket market board buying flow.</td>
-                            </tr>
-                            <tr>
-                                <td>MB Sell</td>
-                                <td>Runs the LlamaMarket retainer selling flow.</td>
-                            </tr>
-                            <tr>
-                                <td>MB Buy/Sell</td>
-                                <td>Runs market board buying then retainer selling for LlamaMarket.</td>
-                            </tr>
-                            <tr>
-                                <td>FC Vessel Task</td>
-                                <td>Runs the Company Workshop redeploy task.</td>
-                            </tr>
-                            <tr>
-                                <td>Lisbeth Order</td>
-                                <td>Call Lisbeth with an order file.</td>
-                            </tr>
+                <div class="feature-item">
+                    <strong>📋 Visual Task Planner</strong>
+                    <p>Build and save custom sequences (e.g., "Daily Routine" or "Crafting Rotation"). Assign specific profiles and tasks from your favorite installed botbases to individual characters.</p>
+                </div>
 
-                            <tr class="group-header">
-                                <td colspan="2">General Utilities</td>
-                            </tr>
-                            <tr>
-                                <td>Delay</td>
-                                <td>Wait for a specified number of seconds before continuing.</td>
-                            </tr>
-                            <tr>
-                                <td>GC Deliveries</td>
-                                <td>Completes the crafting and gathering grand company daily turn-ins.</td>
-                            </tr>
-                            <tr>
-                                <td>Retainer Ventures</td>
-                                <td>Refreshes retainer ventures.</td>
-                            </tr>
-                            <tr>
-                                <td>Character Info</td>
-                                <td>Dump information about character into a markdown file.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
+                <div class="feature-item">
+                    <strong>🛡️ Bulletproof Execution</strong>
+                    <p>Automatically skips failed tasks so your overnight queue never gets stuck.</p>
+                </div>
 
-            </div>
-
-            <section class="card pricing-card">
-                <div class="stripe-container">
-                    
-				<script async src="https://js.stripe.com/v3/pricing-table.js"></script>
-				<stripe-pricing-table pricing-table-id="prctbl_1TOVFSBwgti2RZj6XebhrULz"
-				publishable-key="pk_live_51LiMcgBwgti2RZj6PjkJx3geXiG1E4yOuDxXWYULU2iAzHMHtCYv4oOA7xCcQu4y1ENf6CdOAac0YQ8SxAWiASLt008Ax41p7S">
-				</stripe-pricing-table>
-
-				</div>
+                <div class="feature-item">
+                    <strong>📊 Live Dashboard & Discovery</strong>
+                    <p>One-click account scanning instantly finds all your characters across every DC. Track current progress, errors, and upcoming tasks in real-time on the monitoring overlay.</p>
+                </div>
             </section>
 
-        </main>
-    </div>
+            <section class="card tasks-card">
+                <h2>Included Tasks</h2>
+                <table class="tasks-table">
+                    <tbody>
+                    <tr class="group-header">
+                        <td colspan="2">Botbase Integrations</td>
+                    </tr>
+                    <tr>
+                        <td>MB Buy</td>
+                        <td>Runs the LlamaMarket market board buying flow.</td>
+                    </tr>
+                    <tr>
+                        <td>MB Sell</td>
+                        <td>Runs the LlamaMarket retainer selling flow.</td>
+                    </tr>
+                    <tr>
+                        <td>MB Buy/Sell</td>
+                        <td>Runs market board buying then retainer selling for LlamaMarket.</td>
+                    </tr>
+                    <tr>
+                        <td>FC Vessel Task</td>
+                        <td>Runs the Company Workshop redeploy task.</td>
+                    </tr>
+                    <tr>
+                        <td>Lisbeth Order</td>
+                        <td>Call Lisbeth with an order file.</td>
+                    </tr>
+
+                    <tr class="group-header">
+                        <td colspan="2">General Utilities</td>
+                    </tr>
+                    <tr>
+                        <td>Delay</td>
+                        <td>Wait for a specified number of seconds before continuing.</td>
+                    </tr>
+                    <tr>
+                        <td>GC Deliveries</td>
+                        <td>Completes the crafting and gathering grand company daily turn-ins.</td>
+                    </tr>
+                    <tr>
+                        <td>Retainer Ventures</td>
+                        <td>Refreshes retainer ventures.</td>
+                    </tr>
+                    <tr>
+                        <td>Character Info</td>
+                        <td>Dump information about character into a markdown file.</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </div>
+
+        <section class="card pricing-card">
+            <div class="stripe-container">
+
+                <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+                <stripe-pricing-table pricing-table-id="prctbl_1TOVFSBwgti2RZj6XebhrULz"
+                                      publishable-key="pk_live_51LiMcgBwgti2RZj6PjkJx3geXiG1E4yOuDxXWYULU2iAzHMHtCYv4oOA7xCcQu4y1ENf6CdOAac0YQ8SxAWiASLt008Ax41p7S">
+                </stripe-pricing-table>
+
+            </div>
+        </section>
+
+    </main>
+</div>
 
 </body>
 </html>
