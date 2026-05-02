@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LlamaMarket | The Ultimate FFXIV MarketBoard BotBase</title>
+    <style>
+        :root {
+            --brand-purple: #665280;
+            --brand-orange: #f08b36;
+            --bg-color: #121212;
+            --card-bg: #1e1e24;
+            --text-main: #e0e0e0;
+            --text-muted: #a0a0a0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1300px;
+            width: 95%;
+            margin: 40px auto;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header img {
+            width: 90px;
+            height: 90px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(240, 139, 54, 0.25);
+            margin-bottom: 15px;
+        }
+
+        .header h1 {
+            color: var(--text-main);
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        .header h1 span {
+            color: var(--brand-orange);
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: var(--brand-purple);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-top: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 10px rgba(102, 82, 128, 0.4);
+        }
+
+        /* Two-Column Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 30px;
+            align-items: start;
+        }
+
+        /* Column Wrappers */
+        .left-column, .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        /* Cards */
+        .card {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .features-card {
+            border-left: 5px solid var(--brand-purple);
+			padding: 30px 40px;
+        }
+
+        .tasks-card {
+            border-left: 5px solid var(--brand-orange);
+            padding: 30px 40px;
+        }
+
+        /* Pricing Column (Right Bottom) */
+        .pricing-card {
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            border-top: 5px solid var(--brand-orange);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 10px;
+        }
+
+        /* Feature Items */
+        .feature-item {
+            margin-bottom: 25px;
+        }
+
+        .feature-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .feature-item strong {
+            display: block;
+            color: var(--brand-orange);
+            font-size: 1.15rem;
+            margin-bottom: 4px;
+        }
+
+        .feature-item p {
+            margin: 0;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Tasks Table */
+        .tasks-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        .tasks-table th, .tasks-table td {
+            padding: 5px 6px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .tasks-table th {
+            color: var(--text-muted);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            padding-bottom: 10px;
+        }
+
+        .tasks-table td:first-child {
+            color: var(--text-main);
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .tasks-table td:last-child {
+            color: var(--text-muted);
+        }
+
+        .tasks-table .group-header td {
+            color: var(--brand-purple);
+            font-weight: 700;
+            font-size: 1.05rem;
+			width: 350px
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid rgba(102, 82, 128, 0.3);
+        }
+
+        .tasks-table tr:hover:not(.group-header) td {
+            background-color: rgba(255,255,255,0.02);
+        }
+		
+        /* Stripe Placeholder Area */
+        .stripe-container {
+            width: 100%;
+            min-height: 400px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+			min-width: 350px;
+			width: 350px
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 950px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            .pricing-card {
+                position: relative;
+                top: 0;
+            }
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <img src="https://nt153133.github.io/images/LlamaMarket.png" alt="LlamaMarket Icon">
+            <h1>Llama<span>Market</span></h1>
+            <div class="badge">The Ultimate FFXIV MarketBoard BotBase</div>
+        </header>
+
+        <main class="content-grid">
+            
+            <div class="left-column">
+                
+				<section class="card features-card">
+					<h2>Automated Selling & Infinite Income</h2>
+					
+					<div class="feature-item">
+						<strong>🔄 Continuous Selling Loops</strong>
+						<p>The botbase features a loop option that continually runs, making it perfect for selling off large inventories over time.</p>
+					</div>
+
+					<div class="feature-item">
+						<strong>⚙️ Lisbeth Integration</strong>
+						<p>The plugin integrates directly with <a href="https://www.siune.io/products/lisbeth" target="_blank">Lisbeth</a> to enable perpetual orders. This allows users to infinitely craft items while LlamaMarket automatically posts them to the board.</p>
+					</div>
+
+					<div class="feature-item">
+						<strong>📉 Smart Undercutting</strong>
+						<p>A "Don't Undercut Twice" setting ensures you do not bottom out market prices by competing endlessly with other undercut bots.</p>
+					</div>
+
+					<div class="feature-item">
+						<strong>💰 Retainer Management</strong>
+						<p>LlamaMarket will automatically retrieve gil from your retainers when they make a sale.</p>
+					</div>
+
+                    <div class="feature-item">
+						<strong>🏕️ Venture Refreshing</strong>
+						<p>The botbase can also automatically send your retainers back out on their ventures to keep resources flowing.</p>
+					</div>
+				</section>
+                <section class="card tasks-card">
+                    <h2>Data Center Wide Buying</h2>
+                    
+                    <div class="feature-item">
+						<strong>🌍 Cross-Server Travel</strong>
+						<p>This botbase is uniquely designed to travel seamlessly between servers on your Data Center.</p>
+					</div>
+
+                    <div class="feature-item">
+						<strong>🛒 Automated Purchasing</strong>
+						<p>It will automatically seek out and buy your requested items directly from the MarketBoard across all available servers.</p>
+					</div>
+					
+					<div class="feature-item">
+						<strong>🏷️ Universalis Price Check</strong>
+						<p>Check Universalis price data to know when you're getting a good deal.</p>
+					</div>
+                </section>
+            </div>
+
+            <div class="right-column">
+
+
+
+                <section class="card features-card" style="border-left-color: var(--text-muted);">
+                    <h2>Global Compatibility</h2>
+                    <table class="tasks-table">
+                        <tbody>
+                            <tr class="group-header">
+                                <td colspan="2">Supported Regions & Languages</td>
+                            </tr>
+                            <tr>
+                                <td>Language Support</td>
+                                <td>Native support for English, Spanish, French, German, and Chinese.</td>
+                            </tr>
+                            <tr>
+                                <td>Region Availability</td>
+                                <td>One unified version works for Global, China and Traditional Chinese clients.</td>
+                            </tr>
+                            <tr>
+                                <td>Requirements</td>
+                                <td>Requires <a href="https://rebornbuddy.com/" target="_blank">RebornBuddy</a> and a valid RebornBuddy key.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="card pricing-card">
+                    <div class="stripe-container">
+						<script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+						<stripe-pricing-table pricing-table-id="prctbl_1TSjHtBwgti2RZj6fsByOAo4"
+						publishable-key="pk_live_51LiMcgBwgti2RZj6PjkJx3geXiG1E4yOuDxXWYULU2iAzHMHtCYv4oOA7xCcQu4y1ENf6CdOAac0YQ8SxAWiASLt008Ax41p7S">
+						</stripe-pricing-table>
+                    </div>
+                </section>
+
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
