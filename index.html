@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LlamaMagic offers premium Final Fantasy XIV automation, including BotBases and Plugins for RebornBuddy. Generate passive Gil, automate your FC workshop, and more.">
+    <title>LlamaMagic | Premium FFXIV Automation, BotBases & Plugins</title>
+    <style>
+        :root {
+            --brand-purple: #665280;
+            --brand-orange: #f08b36;
+            --bg-color: #121212;
+            --card-bg: #1e1e24;
+            --text-main: #e0e0e0;
+            --text-muted: #a0a0a0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 95%;
+            margin: 0 auto;
+            padding: 40px 0 80px 0;
+        }
+
+        /* Banner Section */
+        .banner-container {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .banner-container img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 8px;
+            /* No glow effect as requested */
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Hero / Intro Section */
+        .hero {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 30px;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            border-bottom: 4px solid var(--brand-purple);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 2.2rem;
+            margin-top: 0;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        .hero p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 850px;
+            margin: 0 auto 25px auto;
+        }
+
+        .hero a.text-link {
+            color: var(--brand-orange);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .hero a.text-link:hover {
+            color: #d9782b;
+            text-decoration: underline;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.05rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.2s ease;
+            background-color: var(--brand-orange);
+            color: white;
+            box-shadow: 0 4px 15px rgba(240, 139, 54, 0.3);
+        }
+
+        .btn:hover {
+            background-color: #d9782b;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(240, 139, 54, 0.5);
+        }
+
+        /* Section Headings */
+        .section-title {
+            color: white;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            border-bottom: 2px solid rgba(255,255,255,0.05);
+            padding-bottom: 10px;
+        }
+
+        /* Product Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        /* Product Cards */
+        .product-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border-top: 4px solid transparent;
+        }
+
+        .product-card.botbase { border-top-color: var(--brand-purple); }
+        .product-card.plugin { border-top-color: var(--brand-orange); }
+
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+        }
+
+        .product-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            object-fit: cover;
+            background-color: rgba(255,255,255,0.05);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+        }
+
+        .product-title {
+            color: white;
+            font-size: 1.35rem;
+            font-weight: 600;
+            margin: 0 0 10px 0;
+        }
+
+        .product-desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="banner-container">
+        <img src="https://nt153133.github.io/images/NewLlamaMagicDone.png" alt="LlamaMagic Banner">
+    </div>
+
+    <section class="hero">
+        <h1>Premium Final Fantasy XIV Automation</h1>
+        <p>Welcome to LlamaMagic, the premier destination for advanced FFXIV automation. We specialize in developing high-performance BotBases and Plugins specifically designed for <a href="https://rebornbuddy.com/" target="_blank" class="text-link">RebornBuddy</a>.</p>
+        <p>Whether you want to generate passive Gil on the MarketBoard, automate your Free Company workshop utilizing <a href="https://www.siune.io/products/lisbeth" target="_blank" class="text-link">Lisbeth</a>, or completely manage your Island Sanctuary, our tools handle the tedious grind so you can focus on enjoying the game.</p>
+        <a href="downloads.html" class="btn">View Downloads Repository</a>
+    </section>
+
+    <h2 class="section-title">Flagship Products</h2>
+    <div class="product-grid">
+
+        <a href="llamamarket.html" class="product-card botbase">
+            <img src="https://nt153133.github.io/images/LlamaMarket.png" alt="LlamaMarket Icon" class="product-icon">
+            <h3 class="product-title">LlamaMarket</h3>
+            <p class="product-desc">The ultimate MarketBoard bot. Passively sell items, auto-manage retainers, and seamlessly travel across Data Centers to purchase items automatically.</p>
+        </a>
+
+        <a href="companyworkshop.html" class="product-card botbase">
+            <img src="https://nt153133.github.io/images/CompanyWorkshop.png" alt="Company Workshop Icon" class="product-icon">
+            <h3 class="product-title">Company Workshop</h3>
+            <p class="product-desc">Fully automate your FC airships and submersibles. Craft projects from start to finish, complete with autonomous Grand Company seal grinding.</p>
+        </a>
+
+        <a href="islandgatherer.html" class="product-card botbase">
+            <img src="https://nt153133.github.io/images/LlamaGatherer.png" alt="Island Gatherer Icon" class="product-icon">
+            <h3 class="product-title">Island Gatherer</h3>
+            <p class="product-desc">Turn your Island Sanctuary into a passive cowrie generator. Automate resource gathering, leveling loops, base management.</p>
+        </a>
+
+        <a href="islandworkshop.html" class="product-card botbase">
+            <img src="https://nt153133.github.io/images/IslandGathererWorkshop.png" alt="Island Workshop Icon" class="product-icon">
+            <h3 class="product-title">Island Workshop</h3>
+            <p class="product-desc">The true "set-it-and-forget-it" cowrie generator. Fully automates your pasture, farm, granaries, and smart workshop scheduling for total passive income.</p>
+        </a>
+
+        <a href="advertise.html" class="product-card botbase">
+            <img src="https://nt153133.github.io/images/Census.png" alt="LlamaRP Icon" class="product-icon">
+            <h3 class="product-title">LlamaRP (Advertise)</h3>
+            <p class="product-desc">Grow your Roleplay venue effortlessly. Automate world-hopping shout ads across your Data Center and maintain active Party Finder listings.</p>
+        </a>
+
+        <a href="characterswitcher.html" class="product-card plugin">
+            <img src="https://nt153133.github.io/images/CharacterSwitcher.png" alt="CharacterSwitcher Icon" class="product-icon">
+            <h3 class="product-title">Character Switcher</h3>
+            <p class="product-desc">Streamline your alt-army. Seamlessly swap characters and automate daily GC deliveries, marketboard tasks, retainer ventures, and many more across your entire account.</p>
+        </a>
+    </div>
+    <!--
+        <h2 class="section-title">Essential Plugins</h2>
+        <div class="product-grid">
+
+
+
+          <a href="#" class="product-card plugin">
+                <div class="product-icon">🧰</div>
+                <h3 class="product-title">LlamaCheats</h3>
+                <p class="product-desc">A suite of quality-of-life enhancements and visual tweaks designed to customize and optimize your everyday FFXIV gameplay experience.</p>
+            </a>
+
+
+    </div>
+  -->
+    <footer class="footer">
+        &copy; 2026 LlamaMagic.net | All BotBases and Plugins require an active <a href="https://rebornbuddy.com/" target="_blank" class="text-link">RebornBuddy</a> license.
+    </footer>
+
+</div>
+
+</body>
+</html>
