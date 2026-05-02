@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Island Gatherer | LlamaMagic</title>
+    <style>
+        :root {
+            --brand-purple: #665280;
+            --brand-orange: #f08b36;
+            --bg-color: #121212;
+            --card-bg: #1e1e24;
+            --text-main: #e0e0e0;
+            --text-muted: #a0a0a0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1300px;
+            width: 95%;
+            margin: 30px auto;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header img {
+            width: 90px;
+            height: 90px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(240, 139, 54, 0.25);
+            margin-bottom: 5px;
+        }
+
+        .header h1 {
+            color: var(--text-main);
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        .header h1 span {
+            color: var(--brand-orange);
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: var(--brand-purple);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-top: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 10px rgba(102, 82, 128, 0.4);
+        }
+
+        /* Two-Column Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: stretch;
+        }
+
+        /* Column Wrappers */
+        .left-column, .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        /* Cards */
+        .card {
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            min-height: 440px;
+            width: 550px;
+        }
+
+        .features-card {
+            border-left: 5px solid var(--brand-purple);
+            border-bottom: 5px solid var(--brand-purple);
+            padding: 20px;
+            border-radius: 12px;
+            background-color: var(--card-bg);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            padding-top: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .tasks-card {
+            border-left: 5px solid var(--brand-orange);
+            padding: 20px;
+            display: flex;
+            border-radius: 12px;
+            border-top: 5px solid var(--brand-orange);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Feature Items */
+        .feature-item {
+            margin-bottom: 25px;
+        }
+
+        .feature-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .feature-item strong {
+            display: block;
+            color: var(--brand-orange);
+            font-size: 1.15rem;
+            margin-bottom: 4px;
+        }
+
+        .feature-item p {
+            margin: 0;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Tasks Table */
+        .tasks-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        .tasks-table th, .tasks-table td {
+            padding: 5px 6px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .tasks-table th {
+            color: var(--text-muted);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            padding-bottom: 10px;
+        }
+
+        .tasks-table td:first-child {
+            color: var(--text-main);
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .tasks-table td:last-child {
+            color: var(--text-muted);
+        }
+
+        .tasks-table .group-header td {
+            color: var(--brand-purple);
+            font-weight: 700;
+            font-size: 1.05rem;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid rgba(102, 82, 128, 0.3);
+        }
+
+        .tasks-table tr:hover:not(.group-header) td {
+            background-color: rgba(255,255,255,0.02);
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 950px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <img src="https://nt153133.github.io/images/LlamaGatherer.png" alt="Island Gatherer Icon">
+            <h1>Island <span>Gatherer</span></h1>
+            <div class="badge">The Ultimate Island Sanctuary Automation</div>
+        </header>
+
+        <main class="content-grid">
+
+            <div class="left-column">
+
+                <section class="card features-card">
+                    <h2>Resource Gathering & Automation</h2>
+
+                    <div class="feature-item">
+                        <strong>🌴 Targeted Resource Gathering</strong>
+                        <p>Build custom gathering orders for any Island Sanctuary material. Set exact quantities and let the bot do the heavy lifting.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <strong>🔄 Optimized Leveling Loops</strong>
+                        <p>Grind out island experience effortlessly. Utilize pre-optimized gathering loops designed to make leveling faster and easier.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <strong>⚖️ Smart Auto-Selling & Reserves</strong>
+                        <p>Never overflow your inventory. Automatically sell off excess gatherables while maintaining reserves.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <strong>💾 Save & Load Orders</strong>
+                        <p>Easily import and export your gathering lists to switch between different farming goals.</p>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="right-column">
+
+                <section class="card tasks-card">
+                    <h2>Base Management & Information</h2>
+
+                    <div class="feature-item">
+                        <strong>🏗️ Construction & Status Tracking</strong>
+                        <p>Keep an eye on your island's progress. The bot tracks your Granaries, Workshops, and Landmarks, automatically finalizing construction.</p>
+                    </div>
+
+                    <h2 style="margin-top: 20px;">Important Information</h2>
+                    <table class="tasks-table">
+                        <tbody>
+                            <tr class="group-header">
+                                <td colspan="2">Limitations & Addons</td>
+                            </tr>
+                            <tr>
+                                <td>Mindless Grunt Work Only</td>
+                                <td>Handles tedious gathering. Does not complete manual quests required for island leveling.</td>
+                            </tr>
+                            <tr>
+                                <td>Island Workshop Addon</td>
+                                <td>A separate plugin purchase that requires Island Gatherer to function.</td>
+                            </tr>
+                            <tr>
+                                <td>Requirements</td>
+                                <td>Requires <a href="https://rebornbuddy.com/" target="_blank">RebornBuddy</a> and a valid key.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
+
+
