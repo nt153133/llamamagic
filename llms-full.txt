@@ -1,0 +1,205 @@
+# LlamaMagic
+
+> LlamaMagic offers premium Final Fantasy XIV automation, including BotBases and Plugins for RebornBuddy. Generate passive Gil on the MarketBoard, automate your Free Company workshop, manage your Island Sanctuary, advertise roleplay venues, and streamline your alt-army.
+
+## Primary Resources
+
+- [LlamaMarket](https://llamamagic.cc/llamamarket.html): The ultimate FFXIV MarketBoard BotBase for passive selling, smart undercutting, retainer venture refreshing, and automated cross-server purchasing.
+- [Island Gatherer](https://llamamagic.cc/islandgatherer.html): Automates resource gathering, leveling loops, base construction tracking, and smart auto-selling for the FFXIV Island Sanctuary.
+- [Character Switcher](https://llamamagic.cc/characterswitcher.html): A powerful RebornBuddy plugin to schedule and automate tasks across multiple FFXIV characters, servers, and Data Centers.
+
+## Other Products
+
+- [Company Workshop](https://llamamagic.cc/companyworkshop.html): Fully automate FC airships and submersibles expeditions, loot storage, start-to-finish part crafting, and Grand Company seal grinding.
+- [Island Workshop](https://llamamagic.cc/islandworkshop.html): Complete passive cowrie generator (~35,000 weekly) automating pasture, crops, granaries, and smart workshop scheduling.
+- [LlamaRP Advertise](https://llamamagic.cc/advertise.html): Roleplay venue promotion tool. Automates world-hopping shouts, in-venue Barker announcements, and persistent Party Finder listings.
+
+## General Information
+
+- [Downloads](https://llamamagic.cc/downloads.html): Official download links, mirrors (including China), and updates for all LlamaMagic BotBases and Plugins.
+
+---
+
+# Document Contents
+
+This section contains the full, text-only content for each page linked above.
+
+---
+
+## [LlamaMagic Homepage](https://llamamagic.cc/)
+
+### Premium Final Fantasy XIV Automation
+Welcome to LlamaMagic, the premier destination for advanced FFXIV automation. We specialize in developing high-performance BotBases and Plugins specifically designed for RebornBuddy.
+
+Whether you want to generate passive Gil on the MarketBoard, automate your Free Company workshop utilizing Lisbeth, or completely manage your Island Sanctuary, our tools handle the tedious grind so you can focus on enjoying the game.
+
+### Flagship Products
+
+- **LlamaMarket**: The ultimate MarketBoard bot. Passively sell items, auto-manage retainers, and seamlessly travel across Data Centers to purchase items automatically.
+- **Company Workshop**: Fully automate your FC airships and submersibles. Craft projects from start to finish, complete with autonomous Grand Company seal grinding.
+- **Island Gatherer**: Turn your Island Sanctuary into a passive cowrie generator. Automate resource gathering, leveling loops, base management.
+- **Island Workshop**: The true "set-it-and-forget-it" cowrie generator. Fully automates your pasture, farm, granaries, and smart workshop scheduling for total passive income.
+- **LlamaRP (Advertise)**: Grow your Roleplay venue effortlessly. Automate world-hopping shout ads across your Data Center and maintain active Party Finder listings.
+- **Character Switcher**: Streamline your alt-army. Seamlessly swap characters and automate daily GC deliveries, marketboard tasks, retainer ventures, and many more across your entire account.
+
+---
+
+## [LlamaMarket](https://llamamagic.cc/llamamarket.html)
+
+LlamaMarket is the ultimate FFXIV MarketBoard BotBase. Sell items passively, auto-manage retainers, undercut smartly, and buy items across your entire Data Center automatically.
+
+### Automated Selling & Infinite Income
+- **Continuous Selling Loops**: The botbase features a loop option that continually runs, making it perfect for selling off large inventories over time.
+- **Lisbeth Integration**: The plugin integrates directly with Lisbeth to enable perpetual orders. This allows users to infinitely craft items while LlamaMarket automatically posts them to the board.
+- **Smart Undercutting**: A "Don't Undercut Twice" setting ensures you do not bottom out market prices by competing endlessly with other undercut bots.
+- **Retainer Management**: LlamaMarket will automatically retrieve gil from your retainers when they make a sale.
+- **Venture Refreshing**: The botbase can also automatically send your retainers back out on their ventures to keep resources flowing.
+
+### Data Center Wide Buying
+- **Cross-Server Travel**: This botbase is uniquely designed to travel seamlessly between servers on your Data Center.
+- **Automated Purchasing**: It will automatically seek out and buy your requested items directly from the MarketBoard across all available servers.
+- **Universalis Price Check**: Check Universalis price data to know when you're getting a good deal.
+
+### Global Compatibility & Specifications
+- **Language Support**: Native support for English, Spanish, French, German, and Chinese.
+- **Region Availability**: One unified version works for Global, China and Traditional Chinese clients.
+- **Requirements**: Requires RebornBuddy and a valid RebornBuddy key.
+
+---
+
+## [Island Gatherer](https://llamamagic.cc/islandgatherer.html)
+
+Island Gatherer automates resource gathering, leveling loops, smart auto-selling, and base construction tracking for your FFXIV Island Sanctuary.
+
+### Resource Gathering & Automation
+- **Targeted Resource Gathering**: Build custom gathering orders for any Island Sanctuary material. Set exact quantities and let the bot do the heavy lifting.
+- **Optimized Leveling Loops**: Grind out island experience effortlessly. Utilize pre-optimized gathering loops designed specifically to make leveling your island faster and easier.
+- **Smart Auto-Selling & Reserves**: Never overflow your inventory. Automatically sell off excess gatherables while maintaining a strict, user-defined reserve amount.
+- **Save & Load Orders**: Easily import and export your gathering lists to switch between different farming goals on the fly.
+
+### Base Management
+- **Construction & Status Tracking**: Keep an eye on your island's progress. The bot tracks your Granaries, Workshops, and Landmarks, automatically finalizing construction and alerting you to available upgrades.
+
+### Important Information
+- **Limitations**: This bot handles the tedious gathering and selling. It does not complete the manual quests required to level up your island.
+- **Addons**: The Island Workshop automation is a separate plugin purchase that requires Island Gatherer to function.
+- **Requirements**: Requires RebornBuddy and a valid RebornBuddy key.
+
+---
+
+## [Character Switcher](https://llamamagic.cc/characterswitcher.html)
+
+Character Switcher is a powerful RebornBuddy plugin that automates task queues across multiple FFXIV characters, servers, and Data Centers completely hands-free.
+
+### Features
+- **True Hands-Off Automation**: Seamlessly hops between characters, servers, and Data Centers.
+- **Visual Task Planner**: Build and save custom sequences (e.g., "Daily Routine" or "Crafting Rotation"). Assign specific profiles and tasks from your favorite installed botbases to individual characters.
+- **Bulletproof Execution**: Automatically skips failed tasks so your overnight queue never gets stuck.
+- **Live Dashboard & Discovery**: One-click account scanning instantly finds all your characters across every DC. Track current progress, errors, and upcoming tasks in real-time on the monitoring overlay.
+
+### Included Tasks
+
+#### Botbase Integrations
+- **MB Buy**: Runs the LlamaMarket market board buying flow.
+- **MB Sell**: Runs the LlamaMarket retainer selling flow.
+- **MB Buy/Sell**: Runs market board buying then retainer selling for LlamaMarket.
+- **FC Vessel Task**: Runs the Company Workshop redeploy task.
+- **Lisbeth Order**: Call Lisbeth with an order file.
+
+#### General Utilities
+- **Delay**: Wait for a specified number of seconds before continuing.
+- **GC Deliveries**: Completes the crafting and gathering grand company daily turn-ins.
+- **Retainer Ventures**: Refreshes retainer ventures.
+- **Character Info**: Dump information about character into a markdown file.
+
+---
+
+## [Company Workshop](https://llamamagic.cc/companyworkshop.html)
+
+Company Workshop automates your FFXIV Free Company airships and submersibles. Craft parts end-to-end, redeploy vessels, store loot, and grind Grand Company seals autonomously.
+
+### Submersible & Airship Expeditions
+- **Automated Redeployment**: Effortlessly resend active vessels on the same expedition they just completed. The botbase will also handle repairing ships to ensure there is no downtime.
+- **Smart Loot Storage**: Automatically offload and store expedition rewards directly into your retainers or the Company Chest.
+- **Multi-Character Scaling**: Settings are saved on a per-FC basis, meaning the exact same storage and routing settings can be seamlessly used across multiple characters in the same Free Company.
+- **Automation Hooks**: Includes built-in Lisbeth and Orderbot hooks for advanced users looking to integrate workflows.
+
+### Workshop Crafting Automation
+- **Start-to-Finish Crafting**: Fully automates the crafting of airship and submersible parts in the FC workshop. Start new projects from scratch, finish already-started projects, or queue up multiple of the same item.
+- **Autonomous Seal Grinding**: Missing GC shop materials? The botbase will automatically grind Siren Song Sea for Grand Company seals and purchase the required items.
+- **Real-Time Overlay**: Features an in-game overlay to track the live progress of your Lisbeth crafting orders, as well as run statistics during GC seal dungeon grinds.
+
+### Compatibility & Limitations
+- **Client Support**: Fully supports Global (NA/EU/JP/SA) and Chinese clients. Note: Traditional Chinese clients are not currently supported.
+- **Route Limitations**: The bot will only resend ships on the same expedition they just finished.
+- **Housing Projects**: Multi-stage housing items (e.g., Full Estate Exteriors) are not fully supported. The bot can finish the current stage, but will not chain stages automatically.
+- **Lisbeth Required**: This botbase utilizes Lisbeth to craft the parts and requires an active Lisbeth license.
+
+---
+
+## [Island Workshop](https://llamamagic.cc/islandworkshop.html)
+
+Island Workshop is the true set-it-and-forget-it cowrie generator. Fully automates pasture, farm, granaries, and smart workshop scheduling for ~35,000 passive cowries per week.
+
+### Complete Logistics Automation
+- **Smart Workshop Scheduling**: Automatically fetches craft supply/demand info from the server to set your workshop schedule for the week. It refines future days continuously, but ensures your week is completely scheduled even if you miss a day.
+- **Pasture & Farm Management**: Fully automates the collection of granary, farm, and animal leavings. It automatically restocks feed and seeds, crafts required animal nets, and captures the suggested animals for optimal yields.
+- **Granary & Resource Routing**: Granary expeditions are dynamically set for the week depending on what rare materials you are missing most. If you are missing standard gatherable items for your workshop, the bot will gather them for you automatically.
+- **Guided Setup Walkthrough**: A built-in setup window walks you step-by-step through configuring your rest cycles, pastures, and farms to ensure flawless execution.
+
+### Passive Cowrie Generation
+- **~35,000 Cowries Weekly**: While manual min-maxing strategies exist, this addon focuses entirely on complete automation. You never have to manually interact with the island, reliably yielding around 35k-36k cowries passively every single week.
+
+### Important Information
+- **Base Plugin Required**: Requires the Island Gatherer botbase (and key) to function.
+- **Optimal Crops**: Island must be Rank 18. Users must manually remove any duplicate crops first.
+- **Rare Animals**: To keep existing rare animals, you must manually dismiss normal ones and disable the "Release Animals" setting.
+- **Upgrades**: The bot completes building upgrades that have finished, but it does NOT start new ones.
+- **RebornBuddy**: Requires RebornBuddy and a valid RebornBuddy key.
+
+---
+
+## [LlamaRP Advertise](https://llamamagic.cc/advertise.html)
+
+LlamaRP Advertise automates FFXIV roleplay venue promotion. Broadcast world-hopping shout ads across your Data Center and keep Party Finder listings persistently active.
+
+### Automated Promotions
+- **Town Shouts & World Hopping**: Teleport directly to the 3 major cities to broadcast your venue's shout ads. Enable world hopping to automatically travel across your entire Data Center and reach maximum audiences.
+- **Persistent Party Finder**: Keep a Party Finder listing consistently active. The bot will maintain your PF both during your venue's open hours and during the crucial lead-up time before doors open.
+- **In-Venue Barker Announcements**: Set up barker-style announcements to run automatically inside your house or venue. Broadcast in say, yell, or shout chat on a customized interval. The bot will automatically navigate back to its starting location after completing town ad runs.
+
+### Scheduling & Testing
+- **Phase Scheduling & Profiles**: Customize your ad copy specifically for "Before Open" and "During" phases. Easily save, import, and export multiple profiles to switch between different venue nights on the fly.
+- **Safe Test Mode**: Verify your timing and routing without spamming the community. Test Mode moves your character and creates Party Finders normally, but prints shout messages safely to your private /echo and RebornBuddy log instead of public chat.
+
+### Important Limitations
+- **Supported Regions**: Available for NA, EU, JP, and SA regions only. (Not compatible with China or Korea clients).
+- **Housing Navigation**: If returning to a starting point inside a house, ensure there is a direct, clear path. The bot cannot see player-placed furniture and may get stuck trying to jump over desks or barriers.
+
+---
+
+## [Downloads](https://llamamagic.cc/downloads.html)
+
+Official Repositories & Mirrors for all LlamaMagic BotBases and Plugins. All BotBases and Plugins require an active RebornBuddy license.
+
+### BotBases
+- **LlamaMarket**:
+  - Download: https://llamamarket.llamaserver.com/LlamaMarket.zip
+  - China Mirror: https://cn-botbases-hk-1422934157.cos.ap-hongkong.myqcloud.com/LlamaMarket/LlamaMarket.zip
+- **CompanyWorkshop**:
+  - Download: https://companyworkshop.llamaserver.com/CompanyWorkshop.zip
+  - China Mirror: https://cn-botbases-hk-1422934157.cos.ap-hongkong.myqcloud.com/CompanyWorkshop/CompanyWorkshop.zip
+- **IslandGatherer**:
+  - Download: https://islandgatherer.llamaserver.com/IslandGatherer.zip
+  - China Mirror: https://cn-botbases-hk-1422934157.cos.ap-hongkong.myqcloud.com/IslandGatherer/IslandGatherer.zip
+- **LlamaRP**:
+  - Download: https://llamarp.llamaserver.com/LlamaRP.zip
+  - China Mirror: https://llamarp.llamaserver.com/LlamaRP.zip
+
+### Plugins
+- **CharacterSwitcher**:
+  - Download: https://characterswitcher.llamaserver.com/CharacterSwitcher.zip
+  - China Mirror: https://cn-botbases-hk-1422934157.cos.ap-hongkong.myqcloud.com/CharacterSwitcher/CharacterSwitcher.zip
+- **LlamaCheats**:
+  - Download: https://llamacheats.llamaserver.com/LlamaCheats.zip
+  - China Mirror: https://cn-botbases-hk-1422934157.cos.ap-hongkong.myqcloud.com/LlamaCheats/LlamaCheats.zip

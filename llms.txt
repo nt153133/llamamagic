@@ -1,0 +1,19 @@
+# LlamaMagic
+
+> LlamaMagic offers premium Final Fantasy XIV automation, including BotBases and Plugins for RebornBuddy. Generate passive Gil on the MarketBoard, automate your Free Company workshop, manage your Island Sanctuary, advertise roleplay venues, and streamline your alt-army.
+
+## Primary Resources
+
+- [LlamaMarket](https://llamamagic.cc/llamamarket.html): The ultimate FFXIV MarketBoard BotBase for passive selling, smart undercutting, retainer venture refreshing, and automated cross-server purchasing.
+- [Island Gatherer](https://llamamagic.cc/islandgatherer.html): Automates resource gathering, leveling loops, base construction tracking, and smart auto-selling for the FFXIV Island Sanctuary.
+- [Character Switcher](https://llamamagic.cc/characterswitcher.html): A powerful RebornBuddy plugin to schedule and automate tasks across multiple FFXIV characters, servers, and Data Centers.
+
+## Other Products
+
+- [Company Workshop](https://llamamagic.cc/companyworkshop.html): Fully automate FC airships and submersibles expeditions, loot storage, start-to-finish part crafting, and Grand Company seal grinding.
+- [Island Workshop](https://llamamagic.cc/islandworkshop.html): Complete passive cowrie generator (~35,000 weekly) automating pasture, crops, granaries, and smart workshop scheduling.
+- [LlamaRP Advertise](https://llamamagic.cc/advertise.html): Roleplay venue promotion tool. Automates world-hopping shouts, in-venue Barker announcements, and persistent Party Finder listings.
+
+## General Information
+
+- [Downloads](https://llamamagic.cc/downloads.html): Official download links, mirrors (including China), and updates for all LlamaMagic BotBases and Plugins.
